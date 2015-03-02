@@ -1,0 +1,911 @@
+/*
+Theme Name: jungdo
+Theme URI: http://wordpress.org/themes/jungdo
+Author: TidyThemes
+Author URI: http://tidythemes.com/
+Description: <strong>UPDATE</strong> - 4.0+ is here, completely overhauled, yet again. As always, <a href="http://tidythemes.com/concept/#upgrading">use caution when upgrading</a> (tidythemes.com/concept/#upgrading) and <a href="http://tidythemes.com/concept/">learn the TidyThemes concept</a> (tidythemes.com/concept). &nbsp; &rarr; <em><strong>CAUTION</strong>: If you're child theming or have clients that are child theming on top of jungdo (not the recommended use), please do not blindly upgrade to newer versions.</em> &nbsp; &rarr; <strong>DESCRIPTION</strong>: jungdo is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme available anywhere for designers/developers to use as a base/foundation to build websites for clients or to build completely custom themes from scratch to release faster. Clean, semi-minified, unformatted and valid code, SEO-friendly, no programmer comments, standardized and as white label as possible and most importantly, CSS reset for cross-browser-compatability and no intrusive visual CSS styles added whatsoever. A perfect skeleton theme that blows any others like it (the subsequent underscores.me for example) completely out of the water, as they're simply too overcomplicated for what people really want in this kind of theme. Now comes with jQuery enqueued and ready to go. &nbsp; &rarr; <strong>SUPPORT</strong>: Please use the <a href="http://tidythemes.com/forum/">official support forum</a> (tidythemes.com/forum). Comments and suggestions for improving jungdo, please see "<a href="http://tidythemes.com/tidythemes-sucks/">TidyThemes Sucks!</a>" (tidythemes.com/tidythemes-sucks). Just getting started? <a href="http://tidythemes.com/want-to-learn-css/">Want to learn CSS?</a> (tidythemes.com/want-to-learn-css) &nbsp; &rarr; <strong>WHAT'S NEW?</strong>: We stripped down as much custom, extraneous, superfluous junk code as we could and greatly improved the HTML5 structure. <a href="http://make.wordpress.org/themes/author/chipbennett/">Chip Bennett</a> (make.wordpress.org/themes/author/chipbennett), a highly experienced programmer and official WordPress administrator, worked closely with us to audit the theme code for quality. <a href="http://themes.trac.wordpress.org/changeset?old_path=/jungdo/3.3&new_path=/jungdo/4.0">See</a> (themes.trac.wordpress.org/changeset?old_path=/jungdo/3.3&new_path=/jungdo/4.0) just how much we've revamped things. Last, but not least, jungdo has now been <a href="https://github.com/tidythemes/jungdo">opened up on GitHub</a> (github.com/tidythemes/jungdo) if anyone would like to make suggested code additions/improvements. Thank you for using jungdo.
+Version: 4.0.2
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: black, blue, white, light, one-column, fluid-layout, responsive-layout, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+Text Domain: jungdo
+
+jungdo WordPress Theme © 2011-2014 TidyThemes
+jungdo is distributed under the terms of the GNU GPL
+*/
+
+.single img {
+max-width: 100%;
+}
+#content{width: 1170px;
+margin: 0 auto;}
+.page-header .brand {
+text-align: center;
+width: 100%;
+margin: 36px 0 42px 0;
+float: none;
+}
+
+.masonry-gutter{margin:0px;}
+#collapsed-navbar {
+width: 100%;
+}
+
+#content .box {
+width: 50%;
+padding: 6px;
+display: inline-block;
+vertical-align: top;
+margin-bottom: 12px;
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.widget_recent_entries {
+background: #039081;
+color: #fff;
+padding: 15px 60px 35px 38px;
+}
+.widget_recent_entries h3 {
+font-size: 16px;
+margin-bottom: 15px;
+}
+.widget_recent_entries li {
+border-bottom: 1px solid #fff;
+padding: 10px 0;
+}
+.widget_recent_entries .right {
+float: left;
+width: 230px;
+}
+
+.widget_recent_entries li a {
+color: #fff;
+font-size: 14px;
+display: inline-block;
+width: 85%;
+}
+.widget_recent_entries span.post-date {
+color: #d0cece;
+font-size: 12px;
+}
+.widget_tag_cloud {
+display: inline-block;
+margin: 38px 30px 30px 40px;
+width: 90%;
+}
+.banner_caption .button{
+display: none
+}
+.widget_tag_cloud h3 {
+color: #039081;
+margin-bottom: 20px;
+}
+.widget_tag_cloud a {
+float: left;
+margin-right: 12px;
+margin-bottom: 10px;
+padding: 5px 10px;
+background: #039081;
+color: #fff;
+font-size: 14px;
+}
+.widget_archive {
+display: inline-block;
+width: 100%;
+background: #e6e6e6;
+padding: 26px 26px 26px 30px;
+color: #039081;
+}
+.widget_archive h6 {
+margin-bottom: 20px;
+}
+.widget_archive ul {
+padding-left: 30px;
+font-size: 14px;
+}
+.widget_archive li {
+padding: 5px 0;
+}
+.news_event .wp-pagenavi a.nextpostslink,.news_event  .wp-pagenavi a.previouspostslink {
+background: #039081;
+font-weight: normal;
+color: #fff;
+padding: 10px 30px;
+border: none;
+line-height: 1;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+-ms-border-radius: 2px;
+-o-border-radius: 2px;
+border-radius: 2px;
+}
+.wp-pagenavi .current {
+color: #039081;
+background: none;
+border: none;
+}
+.wp-pagenavi{
+margin: 62px 0 80px;
+display: inline-block;
+padding-left: 0;
+border-radius: 4px;
+}
+.news_event  .wp-pagenavi  a {
+font-size: 14px;
+font-weight: bold;
+color: #000;
+margin: 0 2px;
+padding: 3px 9px;
+border: none;
+background: none;
+border: none;
+}
+
+.sigup p {
+font-size: 14px;
+}
+
+.form-horizontal .form-group {
+margin-left: -15px;
+margin-right: -15px;
+}
+.form-group {
+margin-bottom: 15px;
+}
+.sigup .form-control {
+background: #a6a7a7;
+font-size: 12px;
+border: 1px solid #267f9d;
+box-shadow: none;
+color: #fff;
+margin-top: 15px;
+padding: 10px 20px;
+border-radius: 0;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-ms-border-radius: 0;
+-o-border-radius: 0;
+}
+.wysija-submit{
+color: #fff;
+height: 36px;
+width: 212px;
+border: none;
+font-size: 12px;
+padding: 10px 20px;
+background-color: #d9534f;
+border-color: #d43f3a;
+text-align: left;
+}
+.widget_wysija span.icon-arrow-right{
+position: relative;
+left: 50%;
+top: -25px;
+display: inline-block;
+width: 59%;
+}
+input.wysija-submit:after {
+content: '>';
+width: 10px;
+height: 10px;
+}
+.sigup .wysija-input {
+height: 36px;
+width: 83%;
+background: #a6a7a7;
+font-size: 12px;
+border: 1px solid #267f9d;
+box-shadow: none;
+color: #fff;
+margin-top: 15px;
+padding: 10px 20px;
+border-radius: 0;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-ms-border-radius: 0;
+-o-border-radius: 0;
+}
+.list_cate {
+margin: 20px 0 0 40px;
+}
+.list_cate li a {
+color: #000;
+font-size: 14px;
+line-height: 30px;
+}
+.list_cate li{
+list-style: none;
+background-image: url(css/images/icon4.png);
+background-position: 0px center;
+background-repeat: no-repeat;
+padding-left: 25px;
+}
+
+#respond, #comments-list {
+background: #fff;
+padding: 0 25px;
+}
+#reply-title{
+background: #fff;
+padding: 0;
+margin: 80px 0 20px;
+}
+
+.comment-form-author,.comment-form-email,.comment-form-url,.comment-form-comment{
+margin-bottom: 20px;
+
+}
+#author ,#respond #email, #url,#comment{
+width: 65%;
+text-indent: 15px;
+background: #d0cece;
+border: 1px solid #959595;
+height: 38px;
+float: left;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-ms-border-radius: 0;
+-o-border-radius: 0;
+border-radius: 0;
+}
+#comment  {
+height: 185px;
+}
+#respond  label {
+color: #039081;
+font-size: 18px;
+font-weight: normal;
+text-align: left;
+padding-left: 35px;
+}
+.form-submit input{
+background: #039081;
+color: #fff;
+font-size: 20px;
+border: none;
+padding: 20px 75px;
+line-height: 1;
+margin-bottom: 35px;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-ms-border-radius: 0;
+-o-border-radius: 0;
+border-radius: 0;
+}
+p.form-submit {
+display: inline-block;
+width: 100%;
+margin-top: 30px;
+}
+.content_news_active{
+width: 100%;
+display: inline-block;
+}
+.comments-title{
+color: #039081;
+margin: 80px 0 5px;
+padding: 0;
+}
+.comment-author img,.comment-author {
+width: 70px;
+border-radius: 5px;
+height: 70px;
+float: left;
+}
+.comment {
+position: relative;
+display: inline-block;
+width: 100%;
+}
+.comment-awaiting-moderation,.comment-body br{
+display: none;
+}
+.comment-author .fn {
+position: absolute;
+top: -25px;
+left: 0px;
+color: #039081;
+font-size: 16px;
+display: block;
+text-transform: capitalize;
+}
+.comment-body{position: relative;margin-top: 40px;}
+.comment-body>p{
+background: #f8f8f8;
+color: #7f8c8c;
+min-height: 70px;
+font-size: 14px;
+padding: 10px 40px 20px 20px;
+float: right;
+line-height: 1.5;
+-moz-border-radius: 2px;
+width: 630px;
+-webkit-border-radius: 2px;
+-ms-border-radius: 2px;
+-o-border-radius: 2px;
+border-radius: 2px;
+}
+.reply a{
+color: #039081;
+font-size: 14px;
+float: right;
+display: inline-block;
+margin-right: 40px;
+position: absolute;
+top: -20px;
+text-transform: uppercase;
+right: 0px;
+}
+.children .comment{
+width: 95%;
+float: right;
+}
+.children .comment-body>p{
+width: 570px
+}
+.reply a:before {
+color: #039081;
+font-size: 14px;
+content: "\e60d";
+display: inline-block;
+margin-right: 40px;
+}
+.comment-meta{
+color: #7f8c8c;
+font-size: 12px;
+float: left;
+display: inline-block;
+top: -20px;
+left: 70px;
+position: absolute;
+padding-left: 20px;
+}
+.comment-author .says{
+display: none
+}
+.comment-meta a{
+color: #7f8c8c;
+font-size: 12px;
+float: left;
+display: inline-block;
+padding-left: 20px;
+}
+.news_page .carousel-inner{height: 251px}
+.news_page .carousel-inner img{width: 100%}
+.widget_archive li a:before{
+content: '<';
+margin-right: 4px;
+}
+.form_check .submit {
+color: #000;
+background: none;
+border: 1px solid rgba(255,255,255,0.5);
+}
+body.archive {
+background: #f3f3f3;
+padding: 0px
+/* color: #039081; */
+}
+.master-image img{
+border-radius: 50%;
+}
+a{color: #039081}
+.event-cus .image img{
+width: 120px;
+height: 70px;
+}
+.event-cus h6{
+font-weight: 100;
+font-size: 13px;
+}
+
+.img-link img {
+max-width: 100%;
+height: auto;
+width: 100%;
+min-height: 238px;
+max-height: 238px;
+}
+
+.img-link img:hover{
+opacity: 0.5
+}
+.news .list-news .nav li{
+border-bottom: dotted;
+border-bottom-color: #CCC;
+border-bottom-width: 1px;
+background: url('css/images/arrow_squareorange.gif');
+background-repeat: no-repeat;
+background-position: left 14px;
+padding-left: 18px;
+}
+
+.page #home img,.single #home img,.search #home img,.archive  #home img  {
+display: none
+}
+.page-template-page-home #home img{
+display: block;
+
+}
+#caption-home{display: none}
+.page.page-template-page-home #caption-home {
+display: block;
+}
+.page-template-page-home #different_home img{
+display: none
+}
+.sub-menu{
+background: #2a2a2a;
+
+width: 400px;
+display: none;
+position: absolute;
+z-index: 10;
+padding: 4px 20px;
+}
+.menu-item-has-children:hover .sub-menu{
+display: block;
+}
+.sub-menu li {
+position: relative;
+border-top: 1px solid #fff;
+background-image: url(css/images/icon4.png);
+background-position: 0px center;
+background-repeat: no-repeat;
+padding-left: 15px;
+}
+.sub-menu li:first-child{
+border: none: ; }
+.sub-menu li a{
+color: #fff;
+display: inline-block;
+font-size: 13px;
+padding: 12px;
+}
+.button345689 {
+background-color: #1D577C;
+width: 70px;
+color: #FFF;
+text-align: center;
+padding: 18px 0px;
+border-radius: 6px;
+margin-right: 10px;
+border: 2px solid #847D7D;
+font-size: 14px;
+}
+.tbcv {
+display: inline-block;
+background-color: #bdd6ed;
+width: 100%;
+padding-left: 20px;
+padding-top: 30px;
+padding-bottom: 30px;
+margin-bottom: 17px;
+}
+
+.textbox100 {
+width: 112px;
+border: 1px solid #ccc;
+background-color: #FFF;
+color: #000;
+height: 20px;
+}
+.nav.navbar-nav.navbar-right{
+width: 80%;
+text-align:center;
+
+}.students.col-md-12{
+padding:0px;
+}
+.textbox1001 {
+width: 149px;
+border: 1px solid #ccc;
+background-color: #FFF;
+color: #000;
+height: 24px;
+}
+
+.textbox34 {
+width: 52px;
+border: 1px solid #ccc;
+background-color: #FFF;
+color: #000;
+height: 20px;
+}
+
+.textbox341 {
+width: 50px;
+border: 1px solid #ccc;
+background-color: #FFF;
+color: #000;
+height: 20px;
+}
+.carousel-video {
+background: #222;
+margin-bottom: 20px;
+width: 100%;
+display: inline-block;
+padding-bottom: 10px;
+}
+.navation_title{
+border-bottom: 2px solid #000;
+background: #3f3f3f;
+margin-bottom: 5px;
+border-top: 2px solid #898989;
+}
+.changeurl img{
+max-width: 100%;
+height:auto;
+}
+.title-video{
+font-size: 15px;
+padding: 10px 10px 10px 0px;
+color: #fff;
+border-top: 2px solid #a0234f;
+display: inline-block;
+margin-left: 20px;
+text-align: center;
+margin-top: -2px;
+
+}
+.carousel-video .carousel-control.right{
+top: 0px;
+width: 35px;
+color: #000;
+height: 35px;
+}
+.carousel-video .carousel-control.left{
+top: 0px;
+left: 85%;
+width: 35px;
+color: #000;
+height: 35px;
+}
+#video-left{
+
+}
+.page-template-page-video-new{
+background: #171717
+}
+.page-template-page-video-new .title span{
+
+background: #171717;
+color: #fff
+}
+.page-template-page-video-new  .title:after{
+border-top: 3px solid #a0234f;
+}
+.videos-details{
+
+min-height: 30px;
+margin-top: 10px;
+}
+.title-video-current{
+font-size: 15px;
+color: #fff;
+margin: 10px 0px
+}
+.info_video_list li{
+color: #999;
+float: left;
+width: 50%;
+}
+.info_video_list .icon-clock,
+.info_video_list .icon-user{
+margin-right: 5px;
+}
+.videos-details a{
+font-size: 13px;
+color: #999;
+}
+#video_content{
+font-size: 13px;
+color: #999;
+word-break: break-word;
+}
+.video-fixed{
+position: fixed;
+top: 20px;
+width: 570px;
+padding: 0px 15px;
+
+}
+.table-responsive-1{
+display: none
+}
+.video-fixed-2{
+position: fixed;
+width: 570px;
+padding: 0px 15px;
+
+}
+#searchform .form-group{
+position: relative;
+}
+.bg_cus{
+background: #ead6a4
+}
+.row-cus-100{
+display: inline-block;
+width: 100%;
+margin-bottom:20px;
+}
+.bore-bt{
+border-bottom: 1px solid  #ac9c73;
+}
+.row-cus-50 label{
+
+border-right: 1px solid  #ac9c73
+}
+.row-cus-100 label{
+width: 24%;
+float: left;
+margin: 0px;
+text-align: center;
+padding: 10px 0px;
+
+border-right: 1px solid  #ac9c73;
+}
+.row-cus-100 span{
+width: 76%;float: left;
+padding: 10px 10px;
+}
+.row-cus-100,.row-cus-50{
+border: 1px solid #ac9c73;
+margin-top: -1px; 
+}
+.row-cus-50 span,.row-cus-50 label{
+width: 24%;
+padding: 10px 0px;
+display: inline-block;
+margin: 0px;
+text-align: center;
+}
+.row-cus-50 span{
+text-align: left;
+padding-left: 10px;
+}
+.modal-body{
+margin-top: -5px;
+border: 5px solid #044771
+}
+.modal-header .close span{
+font-size: 40px;
+color:#fff;
+}
+#poon h3{
+font-size: 20px;
+margin-bottom: 20px;
+}
+.modal-header{
+background: url('img/tit_inquiry.jpg');
+}
+.master-jung li{width: 50%;display: inline-block;float: left;}
+
+.tools.clearfix{display:none}
+
+#text-8{
+background: #039081;
+margin-bottom: 20px;
+padding:10px 0px;
+}
+#text-8 a{
+color: #fff
+}
+.form-poom-pan{
+margin-bottom: 10px
+}
+.form-poom-pan {
+width: 245px;
+float: left;
+}
+.form-poom-pan label{
+font-weight: 100;
+}
+@media screen and (min-width: 992px) {
+#content .box { width: 20%; }
+.jh-submit{text-align: center;}
+}
+@media only screen and (min-device-width : 769px) and (max-width : 1000px) {
+.tbcv{
+width: 375px;
+display: block;
+margin: 0 auto;
+min-height: 140px;
+}
+#content .box { width: 33%; }
+.trainer{
+margin-bottom: 20px
+}
+
+.screen-reader-text{display: none}
+.events .section .pull-left:last-child{
+width: 120px;
+margin-left: 15px;
+}
+.news_main .img-link img{
+text-align: center;
+
+}
+.list_exe img{
+max-width: 100%
+}
+.list-news ul{
+width: 100%;
+}
+#trainer_slide .carousel-inner .col-md-6{
+margin-top: 3px
+}
+.new-cus-jh{
+margin-top: 20px
+}
+}
+
+
+
+
+/*iPad:*/
+@media screen and (device-aspect-ratio: 3/4) {}
+@media only screen and (min-device-width : 481px) and (max-width : 768px) {
+.sub-menu{
+position: static;
+background: none;
+}
+.sub-menu li{
+border-top:none;
+margin-left: 20px;
+}
+.tbcv{
+  min-height: 140px;
+  margin: 0 auto;
+  display: block;
+width: 375px;
+}
+
+
+.events .section .pull-left:last-child{
+width:160px;
+}
+.events .section{
+padding-left: 15px;
+}
+.list-news ul{
+width: 100%
+}
+#trainer_slide figcaption p{
+padding: 0px 40px
+}
+
+.news_event .read_more{
+bottom: 80px;
+right: 20px;
+}
+#facebooklikebox-2{text-align: center;}
+
+}
+/*iPhone 6:*/
+@media screen and (device-aspect-ratio: 667/375) {
+.navigation .navbar-form button{top: 17px}
+.tbcv {
+width: 375px;
+margin: 0 auto;
+min-height: 140px;
+display: block;
+}
+#facebooklikebox-2{text-align: center;}
+
+}
+
+/*iPhone 6 Plus:*/
+@media screen and (device-aspect-ratio: 16/9) {
+.navigation .navbar-form button{top: 17px}
+.tbcv {
+width: 375px;
+min-height: 140px;
+display: block;
+margin: 0 auto;
+}
+#facebooklikebox-2{text-align: center;}
+}
+/*iPhone < 5:*/
+@media screen and (device-aspect-ratio: 2/3) {
+.navigation .navbar-form button{top: 17px}
+.tbcv {
+width: 375px;
+margin: 0 auto;
+min-height: 140px;
+display: block;
+}
+#facebooklikebox-2{text-align: center;}
+}
+
+/*iPhone 5:*/
+@media screen and (device-aspect-ratio: 40/71) {
+.navigation .navbar-form button{top: 17px}
+.tbcv {
+width: 375px;
+display: block;
+min-height: 140px;
+margin: 0 auto;
+}
+#facebooklikebox-2{text-align: center;}
+
+}
+@media only screen and (min-device-width : 321px) and (max-width : 480px) {
+
+.events .section{
+padding: 0px 0px 0px 35px
+}
+.events .section .pull-left:last-child {
+width: 200px;
+margin-top: 15px;
+}
+.trainer{
+margin-bottom: 20px
+}
+.tbcv {
+width: 375px;
+display: block;
+min-height: 140px;
+margin: 0 auto;
+}
+.navigation .navbar-form button{top: 17px}
+#facebooklikebox-2{text-align: center;}
+}
+@media only screen and (max-width : 320px) {
+#trainer_slide figcaption p{
+padding: 0px 5px
+}
+.tbcv {
+width: 100%;
+margin: 0 auto;
+}
+.events .section{
+padding: 10px;
+}
+.events .section .pull-left:last-child{
+padding: 0px;
+margin-left: 0px;
+}
+
+.events .section .pull-left.image,
+.events .section .pull-left:last-child{
+width: 100%;
+text-align: center;
+padding: 0px
+}
+.events .section .pull-left{
+padding: 0px
+}
+.trainer .image{
+margin: 2px auto;
+}
+.jh-submit{text-align: center;}
+.textbox100{width: 227px;
+margin-bottom: 5px;}
+.bid{
+width: 100%;
+display:inline-block;
+}
+.row-cus-100 label {width: 46%}
+.row-cus-100 span{width: 53%}
+.row-cus-50 span, .row-cus-50 label{
+width: 46%
+}
+.modal-header {
+background: url('img/tit_inquiry.jpg');
+background-size: contain;
+background-repeat: no-repeat;
+background-color: #044771;
+background-position: center center;
+}
+.news_event .list_icon li{
+float: none
+}
+.news_event .read_more{
+bottom: 124px;
+right: 40px;
+}.navigation .navbar-form button{top: 17px}
+#facebooklikebox-2{text-align: center;}
+}
