@@ -19,7 +19,6 @@
 		<?php 	$mypost = array( 'post_type' => 'video','posts_per_page'=> 1 );
       			$loop = new WP_Query( $mypost ); 
       		while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
           	<article id="post-video-current" <?php post_class(); ?>>
                  <?php $id = get_field('url_youtube');  ?>
 				<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/<?php echo $id; ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>              
@@ -33,11 +32,8 @@
 					</li>
 				</ul>
 					<div id="video_content"><?php the_content()?></div>
-
          	</article>
   			 <?php endwhile;  ?>
-
-
 		</div>
 		<div id="video-thumb-right" class="col-md-6 col-xs-12 pull-right">
 			<div class="carousel-video slide" id="myCarousel-1">
@@ -51,11 +47,12 @@
 					<h3 class="title-video">Video</h3>
 				</div>
 				<div class="carousel-inner">
-				<?php 	$the_query = new WP_Query( mypost(20) );
+				<?php 	//Thay Doi Thu Tu Here
+						$page_Id=20;
+						$the_query = new WP_Query( mypost($page_Id) );
 						$count=0;
 						while ( $the_query->have_posts() ) : $the_query->the_post();
 						$count++;
-						
 						if($count == 1){
 							$active = 'active';
 						}else{
@@ -91,7 +88,9 @@
 					<h3 class="title-video">Video</h3>
 				</div>
 				<div class="carousel-inner">
-				<?php 	$the_query = new WP_Query( mypost(19) );
+				<?php 	//Thay Doi Thu Tu Here
+						$page_Id=19;
+						$the_query = new WP_Query( mypost($page_Id) );
 						$count=0;
 						while ( $the_query->have_posts() ) : $the_query->the_post();
 						$count++;
@@ -107,15 +106,12 @@
 					      	<a class="changeurl" style="display: block;width: 100%;height: 100%;" href="#" data-date="<?php the_time('d-m-Y g:i:s A '); ?>" data-author="<?php $author = get_the_author(); echo $author; ?>" data-content="<?php the_content(); ?>" data-title="<?php the_title(); ?>" data-id="https://www.youtube-nocookie.com/embed/<?php the_field('url_youtube');?>?rel=0&amp;showinfo=0" frameborder="0">
 					      		<?php $id=get_field('url_youtube'); ?>
 								<?php the_post_thumbnail('thumbnail'); ?>
-									
 					     	</a>
 					     	<h5 class="videos-details">
 								<a class="changeurl"  href="#" data-date="<?php the_time('d-m-Y g:i:s A '); ?>" data-author="<?php $author = get_the_author(); echo $author; ?>" data-content="<?php the_content(); ?>" data-title="<?php the_title(); ?>" data-id="https://www.youtube-nocookie.com/embed/<?php the_field('url_youtube');?>?rel=0&amp;showinfo=0" frameborder="0">
 									<?php the_title(); ?>
 								</a>
 					     	</h5>
-					     	
-					     	
 				  		</div>
 				    </div>
 					<?php endwhile;  ?>
@@ -133,7 +129,9 @@
 					<h3 class="title-video">Video</h3>
 				</div>
 				<div class="carousel-inner">
-				<?php 	$the_query = new WP_Query( mypost(18) );
+				<?php 	//Thay Doi Thu Tu Here
+						$page_Id=18;
+						$the_query = new WP_Query( mypost($page_Id) );
 						$count=0;
 						while ( $the_query->have_posts() ) : $the_query->the_post();
 						$count++;
@@ -175,7 +173,9 @@
 					<h3 class="title-video">Video</h3>
 				</div>
 				<div class="carousel-inner">
-				<?php 	$the_query = new WP_Query( mypost(17) );
+				<?php 	//Thay Doi Thu Tu Here
+						$page_Id=17;
+						$the_query = new WP_Query( mypost($page_Id) );
 						$count=0;
 						while ( $the_query->have_posts() ) : $the_query->the_post();
 						$count++;

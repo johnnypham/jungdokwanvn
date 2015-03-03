@@ -19,26 +19,15 @@
 			<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/<?php echo $id; ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<div id="video-thumb-right" class="col-md-6 col-xs-12">
-			
 		</div>
-
-
-
-
 		<ul class="row list_picture">
-<?php 
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-$args = array('post_type'=>'video','posts_per_page' => 6, 'paged'=>$paged);
-	 	$the_query = new WP_Query( $args ); ?>
-
-
-<?php if ( $the_query->have_posts() ) : ?>
-	
-	<!-- pagination here -->
-
-	<!-- the loop -->
-	<?php $count = 1; while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
+			<?php 
+			$page_ID=6;
+			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+			$args = array('post_type'=>'video','posts_per_page' => $pageID, 'paged'=>$paged);
+			$the_query = new WP_Query( $args ); ?>
+			<?php if ( $the_query->have_posts() ) : ?>
+			<?php $count = 1; while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 			<li class="col-lg-4 col-sm-6">
 				<figure>
 					<a class="video img-link" title="<?php the_title(); ?>" href="<?php the_field('url_youtube') ?>"><?php the_post_thumbnail(); ?></a></figure>
@@ -53,16 +42,10 @@ $args = array('post_type'=>'video','posts_per_page' => 6, 'paged'=>$paged);
 			$count++; ?>
 			<?php wp_pagenavi( array( 'type' => 'multipart' ) ); ?>
 	<?php endwhile; ?>
-	<!-- end of the loop -->
-
-	<!-- pagination here -->
-
 	<?php wp_reset_postdata(); ?>
-
 <?php else : ?>
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
 		</ul><!--End row-->
-		
 	</div><!--End main-->
 <?php get_footer(); ?>
